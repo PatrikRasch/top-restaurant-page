@@ -1,4 +1,4 @@
-export function initialPageLoad() {
+export function initialPage() {
   const contentDiv = document.querySelector("#content");
 
   const wrapper = document.createElement("div");
@@ -18,20 +18,20 @@ export function initialPageLoad() {
   options.classList.add("options");
   header.appendChild(options);
 
-  const option1 = document.createElement("div");
-  option1.classList.add("option");
-  option1.textContent = "Breakfast";
-  options.appendChild(option1);
+  const home = document.createElement("div");
+  home.classList.add("option");
+  home.textContent = "Home";
+  options.appendChild(home);
 
-  const option2 = document.createElement("div");
-  option2.classList.add("option");
-  option2.textContent = "Lunch";
-  options.appendChild(option2);
+  const menu = document.createElement("div");
+  menu.classList.add("option");
+  menu.textContent = "Menu";
+  options.appendChild(menu);
 
-  const option3 = document.createElement("div");
-  option3.classList.add("option");
-  option3.textContent = "Breakfast";
-  options.appendChild(option3);
+  const contact = document.createElement("div");
+  contact.classList.add("option");
+  contact.textContent = "Contact";
+  options.appendChild(contact);
 
   const mainContent = document.createElement("div");
   mainContent.classList.add("mainContent");

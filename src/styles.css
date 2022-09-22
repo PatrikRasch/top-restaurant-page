@@ -11,59 +11,35 @@ body {
   margin: 0px;
 }
 
-.wrapper {
-  height: 100vh;
+.top {
+  height: 10vh;
   display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
-}
-
-/* .floater {
-  position: absolute;
-  top: 500px;
-  left: 500px;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 50%;
+  justify-content: center;
   background-color: rgb(243, 243, 243);
-  z-index: -1;
-} */
-
-.header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: rgb(243, 243, 243);
-  height: 75px;
 }
 
 .imgLogo {
   max-width: 50px;
   margin: 12px 0px 0px 50px;
   cursor: pointer;
+  position: absolute;
 }
 
-.options {
+.options,
+.tabSwitch {
   display: grid;
   grid-auto-flow: column;
-  font-size: 25px;
+  /* font-size: 25px; */
   font-family: MADE-Gentle;
-  margin: 10px;
-  margin-right: 150px;
-  cursor: pointer;
-  align-content: center;
-}
-
-.option {
-  margin: 0px 40px 0px 40px;
 }
 
 .mainContent {
+  height: 70vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
   padding: 0px 120px 0px 120px;
-  margin-top: 45px;
   font-family: satoshi;
 }
 
@@ -76,10 +52,11 @@ body {
 .description {
   font-size: 20px;
   width: 550px;
+  font-family: satoshi;
 }
 
 .imgBurger {
-  max-width: 500px;
+  max-width: 450px;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -89,8 +66,8 @@ body {
 }
 
 .imgBurger:active {
-  transform: rotate(10deg);
-  transition: 0.1s;
+  transform: rotate(180deg);
+  /* transition: 0.1s; */
 }
 
 .leftSide {
@@ -104,7 +81,7 @@ body {
   margin-top: 20px;
   font-size: 25px;
   border-radius: 10px;
-  background-color: rgb(141, 238, 255);
+  background-color: sandybrown;
   width: 250px;
   height: 50px;
   transition: all 0.1s;
@@ -112,12 +89,168 @@ body {
 }
 
 .order:hover {
-  background-color: rgb(132, 225, 241);
+  background-color: rgb(233, 137, 53);
 }
 
 .footer {
-  height: 150px;
+  height: 20vh;
   background-image: url(../src/img/fastfood-pattern.png);
   background-size: 150px 150px;
   background-repeat: repeat-x;
+}
+
+/* Menu page */
+.menuHeader {
+  display: grid;
+  grid-template-rows: 100px 75px;
+  justify-items: center;
+  height: 70vh;
+}
+
+.menu {
+  width: 100vw;
+  padding: 0px 15px 0px 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+}
+
+.menuTitle {
+  margin-top: 24px;
+}
+
+.menuDescription {
+  font-size: 20px;
+  margin-top: 9px;
+  font-family: satoshi;
+}
+
+.menuItem {
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+  background-color: sandybrown;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  justify-items: center;
+}
+.menuItem:hover {
+  background: linear-gradient(blue, green, red);
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.menuItemTitle {
+  font-size: 30px;
+  font-family: MADE-Gentle;
+  margin-top: 10px;
+}
+
+.menuItemImg {
+  width: 150px;
+  transition: 0.1s;
+}
+
+.menuItemImg:hover {
+  transform: rotate(300deg);
+}
+
+.menuItemDescription {
+  font-family: satoshi;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.contact {
+  width: 65vw;
+  padding: 0px 15px 0px 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+}
+
+.contactItemManager,
+.contactItemStaff {
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+  background-color: sandybrown;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  justify-items: center;
+  transition: 0.5s;
+}
+.contactItemManager:hover {
+  background-color: rgb(255, 217, 0);
+  transform: scale(1.02);
+}
+.contactItemStaff:hover {
+  background-color: rgb(43, 43, 43);
+  transform: scale(0.98);
+}
+.contactItemTitle {
+  font-size: 30px;
+  font-family: MADE-Gentle;
+  margin-top: 10px;
+}
+
+.contactItemDescription {
+  font-family: satoshi;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+  white-space: pre-line;
+}
+
+.tab {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  list-style-type: none;
+  background-color: white;
+  width: 125px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin: 0px 15px 0px 15px;
+  cursor: pointer;
+}
+
+.viewing {
+  background-color: sandybrown;
+}
+
+.managerImg {
+  max-width: 280px;
+  transition: 0.5s;
+}
+.managerImg:hover {
+  transform: scale(1.1);
+}
+.staffImg {
+  width: 130px;
+  transition: 0.5s;
+}
+.staffImg:hover {
+  opacity: 0.1;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 2000px) {
+  .menu {
+    width: 65vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+  }
 }
