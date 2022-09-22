@@ -1,3 +1,5 @@
+// import logoPic from "./img/logo.png";
+
 export function headerPage() {
   const contentDiv = document.querySelector("#content");
   const top = document.querySelector(".top");

@@ -1,3 +1,5 @@
+import meal from "./img/meal.png";
+
 export function homePage() {
   const contentDiv = document.querySelector("#content");
 
@@ -29,6 +31,6 @@ export function homePage() {
 
   const imgBurger = document.createElement("img");
   imgBurger.classList.add("imgBurger");
-  imgBurger.src = "../src/img/meal.png";
+  imgBurger.src = meal;
   mainContent.appendChild(imgBurger);
 }

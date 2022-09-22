@@ -1,3 +1,5 @@
+import ainsley from "./img/ainsley.png";
+
 export function menuPage() {
   const contentDiv = document.querySelector("#content");
 
@@ -31,7 +33,7 @@ export function menuPage() {
 
   const menuItem1Img = document.createElement("img");
   menuItem1Img.classList.add("menuItemImg");
-  menuItem1Img.src = "../src/img/ainsley.png";
+  menuItem1Img.src = ainsley;
   menuItem1.appendChild(menuItem1Img);
 
   const menuItem1Description = document.createElement("div");

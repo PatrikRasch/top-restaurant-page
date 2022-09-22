@@ -3,6 +3,7 @@ import { footerPage } from "./footer-page.js";
 import { homePage } from "./home-page.js";
 import { menuPage } from "./menu-page.js";
 import { contactPage } from "./contact-page.js";
+import "./styles.css";
 
 const content = document.querySelector("#content");
 

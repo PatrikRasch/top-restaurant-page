@@ -1,3 +1,6 @@
+import staffPic from "./img/harold.png";
+import managerPic from "./img/jeff-bezos.png";
+
 export function contactPage() {
   const contentDiv = document.querySelector("#content");
 
@@ -32,7 +35,7 @@ export function contactPage() {
 
   const staffImg = document.createElement("img");
   staffImg.classList.add("staffImg");
-  staffImg.src = "../src/img/harold.png";
+  staffImg.src = staffPic;
   staff.appendChild(staffImg);
 
   const staffDescription = document.createElement("div");
@@ -51,7 +54,7 @@ export function contactPage() {
 
   const managerImg = document.createElement("img");
   managerImg.classList.add("managerImg");
-  managerImg.src = "../src/img/jeff-bezos.png";
+  managerImg.src = managerPic;
   manager.appendChild(managerImg);
 
   const managerDescription = document.createElement("div");
