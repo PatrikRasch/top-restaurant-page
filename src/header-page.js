@@ -1,9 +1,15 @@
-// import logoPic from "./img/logo.png";
+import logoPic from "./img/logo.png";
 
 export function headerPage() {
   const contentDiv = document.querySelector("#content");
   const top = document.querySelector(".top");
   const tabSwitch = document.querySelector(".tabSwitch");
+  const header = document.querySelector(".header");
+
+  const headerImg = document.createElement("img");
+  headerImg.src = logoPic;
+  headerImg.classList.add("imgLogo");
+  header.appendChild(headerImg);
 
   const home = document.querySelector(".homeTab");
   home.classList.add("option");
