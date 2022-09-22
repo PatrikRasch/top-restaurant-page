@@ -53,7 +53,7 @@ export function menuPage() {
 
   const menuItem2Img = document.createElement("img");
   menuItem2Img.classList.add("menuItemImg");
-  menuItem2Img.src = "../src/img/ainsley.png";
+  menuItem2Img.src = ainsley;
   menuItem2.appendChild(menuItem2Img);
 
   const menuItem2Description = document.createElement("div");
@@ -73,7 +73,7 @@ export function menuPage() {
 
   const menuItem3Img = document.createElement("img");
   menuItem3Img.classList.add("menuItemImg");
-  menuItem3Img.src = "../src/img/ainsley.png";
+  menuItem3Img.src = ainsley;
   menuItem3.appendChild(menuItem3Img);
 
   const menuItem3Description = document.createElement("div");
@@ -93,7 +93,7 @@ export function menuPage() {
 
   const menuItem4Img = document.createElement("img");
   menuItem4Img.classList.add("menuItemImg");
-  menuItem4Img.src = "../src/img/ainsley.png";
+  menuItem4Img.src = ainsley;
   menuItem4.appendChild(menuItem4Img);
 
   const menuItem4Description = document.createElement("div");
